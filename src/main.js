@@ -18,7 +18,7 @@ $("#montey").submit(function (event){
   
   if (response) {
     console.log(response);
-    $("#output").text(`${response.conversion_rates.AED}`);
+    $("#output").text(`${response.conversion_rates.AED}`*input);
     }
   }
   });

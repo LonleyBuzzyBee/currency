@@ -1,5 +1,5 @@
 export class Currency {
-  async getExchangeInfo(input) {
+  async getExchangeInfo() {
     try {
       let exchange = await fetch(`https://prime.exchangerate-api.com/v5/${process.env.API_KEY}/latest/USD`, {
         "method":"GET"
@@ -17,4 +17,12 @@ export class Currency {
       return false;
     }
   }
+  // async getElements(input) {
+   
+  
+  // if (response) {
+  //   console.log(response);
+  //   $("#output").text(`${response.conversion_rates.AED}`);
+  //   }
+  // }
 }
