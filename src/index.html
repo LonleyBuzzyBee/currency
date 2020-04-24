@@ -6,26 +6,31 @@
 </head>
 <body>
   <div class="container">
-    <h4>Enter a  USD dollar amount to be given the value in a different currency</h14>
-
-    <form id="montey">
-      <input placeholder="Enter Monetary amount" type="number" step=".01">
-
-      <label for="type">Choose which currency you'd like to convert USD to:</label>
+   <div class="col1 row">
+      <h4>Enter a  USD dollar amount then choose a currency you'd like to convert it to.</h14>
+   
       
-      <select id="type">
-        <option value="">memes</option>
-        <option value="AED">United Arab Emirates Dirham</option>
-        <option value="EUR">Euroes</option>
-        <option value="KRW">South Korean Won</option>
-        <option value="CNY">Chinese Yuan</option>
-        <option value="BGN">Bulgarian</option>
-      </select>
+      <form id="montey">
+        <div class="row">
+        <input placeholder="Enter Monetary amount" type="number" step=".01">
+        </div>
+       <div class="row">
+        <select id="type">
+          <option value="">memes</option>
+          <option value="AED">United Arab Emirates Dirham</option>
+          <option value="EUR">Euroes</option>
+          <option value="KRW">South Korean Won</option>
+          <option value="CNY">Chinese Yuan</option>
+          <option value="BGN">Bulgarian</option>
+        </select>
+        </div>
+        <div class="row">
+        <button type="submit">Submit</button>
+      </div>
+      </form>
+      </div>
 
-      <button type="submit">Submit</button>
-    </form>
-    <p><span id="output"></span></p>
-
+      <p><span id="output"></span></p>
   </div>
 </body>
 </html>
