@@ -1,13 +1,25 @@
+body{
+  background-image: linear-gradient(to right ,#ffffff,#fffdd9, #f7f5be, #fff982,#ffffff);
+}
 .container {
+  padding: 5%;
   display: flex;
-  background-color: aqua;
 
 }
 .row{
   display: block;
   flex-wrap: wrap;
-  width: 75%;
-  height:75%;
+  width: 50%;
+  height:50%;
   padding-left: 10%;
   
 } 
+#intro{
+  margin-bottom: 3%;
+}
+input{
+  margin-bottom: 1%;
+}
+#type {
+  margin-bottom: 1%;
+}
