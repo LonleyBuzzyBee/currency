@@ -6,14 +6,15 @@
 </head>
 <body>
   <div class="container">
-   <div class="col1 row">
+   <div class="col1">
       <h4 id="intro">Enter a  USD dollar amount then choose a currency you'd like to convert it to.</h4>
       <form id="montey">
         <div class="row">
         <input placeholder="Enter Monetary amount" type="number" step=".01">
         </div>
-       <div class="row">
+      
         <select id="type">
+          <option value=""></option>
           <option value="">memes</option>
           <option value="AED">United Arab Emirates Dirham</option>
           <option value="EUR">Euroes</option>
@@ -21,13 +22,13 @@
           <option value="CNY">Chinese Yuan</option>
           <option value="BGN">Bulgarian</option>
         </select>
-        </div>
-        <div class="row">
+       
+        
         <button type="submit">Submit</button>
-      </div>
+    
       </form>
       </div>
-      <div class="col2 row">
+      <div class="col2">
       <h1><span id="output"></span></h1>
     </div>
   </div>

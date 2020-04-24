@@ -6,20 +6,51 @@ body{
   display: flex;
 
 }
-.row{
+.col1{
+  background-color: #c2fff8;
   display: block;
   flex-wrap: wrap;
-  width: 50%;
-  height:50%;
-  padding-left: 10%;
+  width: 40%;
+  height:40%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 5%;
+  padding-bottom: 8%;
+  margin-right: 5%;
+  border-radius: 10px;
   
-} 
+}
+.col2 {
+   background-color: #c2fff8;
+    display: block;
+    flex-wrap: wrap;
+    width: 40%;
+    height:40%;
+    padding:10%;
+    margin-right: 5%;
+    border-radius: 10px;
+}
 #intro{
   margin-bottom: 3%;
 }
 input{
   margin-bottom: 1%;
+  border-radius: 2px;
 }
 #type {
   margin-bottom: 1%;
+  border-radius: 2px;
+}
+button{
+  cursor: pointer;
+  border-radius: 2px;
+   background-color:#fffee8;
+}
+button:hover {
+  background-color:#e3fffc;
+}
+button:active {
+    background-color:#fffee8;
+    box-shadow: 0 4px #c7c6af;
+    transform: translate(4px);
 }
