@@ -1,4 +1,4 @@
-// import swal from 'sweetalert2';
+import swal from 'sweetalert2';
 import { Currency } from './../src/currency.js';
 import $ from 'jquery';
 import './style.css';
