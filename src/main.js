@@ -1,4 +1,4 @@
-import swal from 'sweetalert2';
+// import swal from 'sweetalert2';
 import { Currency } from './../src/currency.js';
 import $ from 'jquery';
 import './style.css';
@@ -6,7 +6,7 @@ import './style.css';
 $(document).ready(function () {
 $("#montey").submit(function (event){
   event.preventDefault();
-  let input = $("input").val();
+  let input = parseInt($("input").val());
   console.log(input);
   (async () => {
     let currency = new Currency();
@@ -18,7 +18,7 @@ $("#montey").submit(function (event){
   
   if (response) {
     console.log(response);
-    swal.fire("yooooo");
+    $("#output").text(`${response.conversion_rates.AED}`);
     }
   }
   });
