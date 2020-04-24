@@ -17,12 +17,5 @@ export class Currency {
       return false;
     }
   }
-  // async getElements(input) {
-   
   
-  // if (response) {
-  //   console.log(response);
-  //   $("#output").text(`${response.conversion_rates.AED}`);
-  //   }
-  // }
 }
