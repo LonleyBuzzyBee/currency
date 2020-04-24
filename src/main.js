@@ -1,13 +1,13 @@
-// import swal from 'sweetalert2';
+import swal from 'sweetalert2';
 import { Currency } from './../src/currency.js';
 import $ from 'jquery';
-import './style.css';
-import Swal from 'sweetalert2';
+import './../src/style.css';
+
 
 $(document).ready(function () {
 $("#montey").submit(function (event){
   event.preventDefault();
-  let input = parseInt($("input").val());
+  let input = $("input").val();
   let type = $("#type").val();
   console.log(input);
   (async () => {
@@ -18,22 +18,22 @@ $("#montey").submit(function (event){
 
   function getElements(response, type) {
   
-    if (!response && type === null) {
-     
-      Swal.fire("whoops sorry currency doesn't exist");
   
-  }else if (response && type === "AED") {
-    console.log(response);
-    $("#output").text(`${type}`+":"+`${response.conversion_rates.AED}`*input);
-  } else if (response && type === "EUR") {
-     $("#output").text(`${type}`+":"+`${response.conversion_rates.EUR}`*input);
-  } else if (response && type === "KRW") {
-    $("#output").text(`${type}` + ":" + `${response.conversion_rates.KRW}` * input);
+   
+  if (response && type === "AED") {
+      console.log(response);
+      $("#output").text(`${type}` + ":" + " " + `${response.conversion_rates.AED}` * input);
+    } else if (response && type === "EUR") {
+      $("#output").text(`${type}` + ":" + " " + `${response.conversion_rates.EUR}` * input);
+    } else if (response && type === "KRW") {
+      $("#output").text(`${type}` + ":" + " " + `${response.conversion_rates.KRW}` * input);
     
-  } else if (response && type === "CNY") {
-     $("#output").text(`${type}` + ":" + `${response.conversion_rates.KRW}` * input);
+    } else if (response && type === "CNY") {
+      $("#output").text(`${type}` + ":" + " " + `${response.conversion_rates.KRW}` * input);
+    } else if (response && type === "BGN") {
+       $("#output").text(`${type}` + ":" + " " + `${response.conversion_rates.BGN}` * input);
     } else {
-      swal.fire("Error Error ERROR ERROR");
+      swal.fire("whoops sorry currency doesn't exist");
     }
   }
 
